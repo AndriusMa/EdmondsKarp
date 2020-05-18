@@ -58,6 +58,7 @@ if __name__ == "__main__":
       file_object = open(file_name, "r")
     except FileNotFoundError:
       print("File with provided name does not exist")
+      input("Press any key to exit")
       exit(-1)
     W = []
     source = 0
@@ -132,9 +133,11 @@ if __name__ == "__main__":
 
     else:
       print("Invalid input")
+      input("Press any key to exit")
       exit(-1)
   else:
     print("Invalid input")
+    input("Press any key to exit")
     exit(-1)
 
   counter = 0
@@ -145,5 +148,4 @@ if __name__ == "__main__":
   #counter += 1
   #print("Time elapsed: " + str(time.time() - time_before))
   print("Max flow: " + str(max_flow))
-
   input("Press any key to exit")
